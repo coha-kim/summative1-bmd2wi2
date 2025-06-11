@@ -1,0 +1,212 @@
+/* Nohemi Light */
+@font-face {
+  font-family: "Nohemi";
+  src: url("Nohemi-Light.woff2") format("woff2"),
+    url("Nohemi-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nohemi Regular */
+@font-face {
+  font-family: "Nohemi";
+  src: url("Nohemi-Regular.woff2") format("woff2"),
+    url("Nohemi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nohemi Medium */
+@font-face {
+  font-family: "Nohemi";
+  src: url("Nohemi-Medium.woff2") format("woff2"),
+    url("Nohemi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* Presets */
+
+:root {
+  /* Colours */
+  /* functions of the colours */
+  --primary-green: #01aa5f;
+  --accent-pink: #ee6ab7;
+  --background-black: #2d2d2d;
+  --background-ivory: #f9f7eb;
+  --grey: #d4d2c7;
+}
+
+body,
+html {
+  font-family: "Nohemi", sans-serif;
+  background-color: var(--background-ivory);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.625rem;
+}
+h3 {
+  font-weight: 300;
+  font-size: 2.375rem;
+}
+h4 {
+  font-weight: 300;
+  font-size: 1.625rem;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+p {
+  font-weight: 300;
+  font-size: 1.0625rem;
+
+  .caption {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* LAYOUT */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 24px 0;
+}
+
+nav a {
+  text-decoration: underline;
+  color: var(--background-black);
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 17px;
+}
+
+/* HERO */
+#hero {
+  display: grid;
+  grid-template-rows: 108px 423px;
+  grid-template-columns: auto 1fr 1fr auto;
+  column-gap: 16px;
+  justify-items: end;
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.heading-hero {
+  grid-row-start: 1;
+  grid-column: 1 / -1;
+  justify-content: end;
+}
+
+.heading-hero p {
+  font-size: 12px;
+  place-self: start;
+  margin: 0px;
+  padding-bottom: 4px;
+}
+
+.heading-hero h1 {
+  margin: 0px;
+}
+
+.description-hero {
+  color: var(--primary-green);
+  grid-row-start: 2;
+  grid-column: 1 / -1;
+}
+
+.description-hero h5 {
+  margin: 0px;
+  text-align: right;
+}
+
+.kawakawa-graphic {
+  position: absolute;
+  grid-row: 2;
+  left: -16px;
+  height: 291px;
+  width: 100vw;
+  object-fit: cover;
+  margin-top: 125px;
+
+  margin-bottom: 0;
+}
+
+.pink-element {
+  grid-area: 2/1/2/3;
+  height: 207px;
+  opacity: 85%;
+  place-self: start;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+/* CATEGORIES */
+
+#categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 16px;
+    padding-top: 40px;
+}
+
+#categories a {
+    font-size: 1.625rem;
+    color: var(--background-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-pink);
+    aspect-ratio: 1 / 1;
+}
+
+.light-button, .care-button {
+    border-radius: 50%;
+}
+
+
+
+
+
+

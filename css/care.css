@@ -1,0 +1,87 @@
+/* LAYOUT */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 24px 0;
+}
+
+nav a {
+  text-decoration: underline;
+  color: var(--background-black);
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 17px;
+}
+
+/* HERO */
+#hero {
+  display: grid;
+  grid-template-rows: 114px 416px;
+  grid-template-columns: auto 1fr 1fr auto;
+  column-gap: 16px;
+  justify-items: end;
+  position: relative;
+}
+
+#hero h1 {
+    padding: 98px 0 98px 0;
+    text-align: center;
+}
+
+
+#hero .back-button {
+    grid-area: 2 / -1 / 2 / 1 ;
+    transform: rotate(180deg);
+    place-self: end;
+    padding-right: 16px;
+}
+
+
+
+
+
+
+
+.kawakawa-graphic {
+  grid-area: 2 / 1 / 2 / -1;
+  left: -16px;
+  height: 291px;
+  width: 100vw;
+  object-fit: cover;
+  margin-top: 125px;
+  margin-bottom: 0;
+}
+
+.pink-element {
+  grid-area: 2/1/2/3;
+  height: 207px;
+  margin: 16px;
+  opacity: 85%;
+  place-self: start;
+  padding-top: 10px;
+  z-index: 1;
+
+
+}

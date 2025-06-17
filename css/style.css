@@ -1,8 +1,8 @@
 /* Nohemi Light */
 @font-face {
   font-family: "Nohemi";
-  src: url("Nohemi-Light.woff2") format("woff2"),
-    url("Nohemi-Light.otf") format("opentype");
+  src: url("../fonts/Nohemi-Light.woff2") format("woff2"),
+    url("../fonts/Nohemi-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 /* Nohemi Regular */
 @font-face {
   font-family: "Nohemi";
-  src: url("Nohemi-Regular.woff2") format("woff2"),
-    url("Nohemi-Regular.otf") format("opentype");
+  src: url("../fonts/Nohemi-Regular.woff2") format("woff2"),
+    url("../fonts/Nohemi-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -21,8 +21,8 @@
 /* Nohemi Medium */
 @font-face {
   font-family: "Nohemi";
-  src: url("Nohemi-Medium.woff2") format("woff2"),
-    url("Nohemi-Medium.otf") format("opentype");
+  src: url("../fonts/Nohemi-Medium.woff2") format("woff2"),
+    url("../fonts/Nohemi-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -124,19 +124,18 @@ nav a {
 /* HERO */
 #hero {
   display: grid;
-  grid-template-rows: 108px 423px;
+  grid-template-rows: 114px 416px;
   grid-template-columns: auto 1fr 1fr auto;
   column-gap: 16px;
   justify-items: end;
   position: relative;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .heading-hero {
   grid-row-start: 1;
   grid-column: 1 / -1;
   justify-content: end;
+  margin-right: 16px; 
 }
 
 .heading-hero p {
@@ -144,7 +143,7 @@ nav a {
   place-self: start;
   margin: 0px;
   padding-bottom: 4px;
-}
+}df
 
 .heading-hero h1 {
   margin: 0px;
@@ -154,7 +153,8 @@ nav a {
   color: var(--primary-green);
   grid-row-start: 2;
   grid-column: 1 / -1;
-}
+  margin-right: 16px;
+} 
 
 .description-hero h5 {
   margin: 0px;
@@ -162,24 +162,25 @@ nav a {
 }
 
 .kawakawa-graphic {
-  position: absolute;
-  grid-row: 2;
+  grid-area: 2 / 1 / 2 / -1;
   left: -16px;
   height: 291px;
   width: 100vw;
   object-fit: cover;
   margin-top: 125px;
-
   margin-bottom: 0;
 }
 
 .pink-element {
   grid-area: 2/1/2/3;
   height: 207px;
+  margin: 16px;
   opacity: 85%;
   place-self: start;
   padding-top: 10px;
   z-index: 1;
+
+
 }
 
 /* CATEGORIES */

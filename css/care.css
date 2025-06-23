@@ -27,18 +27,18 @@ nav a {
 }
 
 .brand-name {
-    font-size: 1.25rem;
-    text-decoration: none;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
 
 .menu {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 /* HERO */
 #hero {
   display: grid;
-  grid-template-rows: 114px 416px;
+  grid-template-rows: 250px 479px;
   grid-template-columns: auto 1fr 1fr auto;
   column-gap: 16px;
   justify-items: end;
@@ -46,42 +46,51 @@ nav a {
 }
 
 #hero h1 {
-    padding: 98px 0 98px 0;
-    text-align: center;
+  grid-area:  1 / 1 / 1 / -1;
+  padding: 98px 0 98px 0;
+  text-align: center;
+  justify-self: center;
 }
 
-
-#hero .back-button {
-    grid-area: 2 / -1 / 2 / 1 ;
-    transform: rotate(180deg);
-    place-self: end;
-    padding-right: 16px;
+#hero a {
+  grid-area: 2 / -1 / 2 / 1;
+  margin-top: 200px;
+  align-self: self-start;
+  transform: rotate(180deg);
+  padding-right: 16px;
 }
-
-
-
-
-
-
 
 .kawakawa-graphic {
   grid-area: 2 / 1 / 2 / -1;
-  left: -16px;
   height: 291px;
   width: 100vw;
   object-fit: cover;
-  margin-top: 125px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .pink-element {
-  grid-area: 2/1/2/3;
+  display: grid;
+  grid-area: 2 / 1 / 3 / -1;
   height: 207px;
   margin: 16px;
   opacity: 85%;
   place-self: start;
-  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-top: 195px;
+}
+
+
+/* QUICK INFO */
+
+.quick-info {
+  grid-area: 2 / 2 / -1 / -1 ;
+  margin-top: 310px;
+  margin-right: 16px;
+  margin: 310px 16px 0 110px;
   z-index: 1;
+}
 
-
+.quick-info h3 {
+  gap: 8px;
 }

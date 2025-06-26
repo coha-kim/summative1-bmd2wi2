@@ -81,6 +81,10 @@ nav a {
   margin-top: 145px;
 }
 
+.back-button {
+  rotate: 180deg;
+}
+
 /* CONTENT OVERALL STYLING */
 
 #all-content {
@@ -90,7 +94,7 @@ nav a {
   column-gap: 16px;
   position: relative;
   row-gap: 80px;
-  margin: 0 16px 0 16px;
+  margin: 0 16px 76px 16px;
 }
 
 #all-content .image-container {
